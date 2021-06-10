@@ -1,0 +1,407 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+body{
+    margin: 0;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.dotted-hr{
+    border: 6px dotted white;
+    border-bottom: none;
+    margin: 20px auto;
+    width:150px;
+}
+[class*="col-"]{
+    float: left;
+    padding:10px ;
+}
+/* for mobile */
+[class*="col-"]{
+    width:100%;
+}
+
+/* nav-bar design starts from here. */
+.navbar{
+    background-color: #40868b;
+    padding: 1% 7%;
+    text-align: center;
+}
+.nav-heading{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.nav-list a{
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+.nav-list a:hover{
+    background-color: gray;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* nav-bar design ends here. */
+
+/* Portfolio design starts  from here: */
+.profile img{
+    width: 100px;
+    height: 100px;
+}
+.profile{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+}
+.profile .icon1{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: transform 2s;
+}
+.profile .icon1:hover{
+    transform: rotate(360deg);
+}
+
+.profile .icon2{
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    transition: transform 2s;
+}
+.profile .icon2:hover{
+    transform: rotate(360deg);
+}
+
+.profile-description h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+.profile-description p{
+    color: gray;
+    margin: 0px auto 20px auto;
+    text-align: center;
+    width: 90%;
+    
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* Portfolio design ends here: */
+
+/* About me design Starts here: */
+
+.aboutme{
+    background-color:#39a4ac ;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;;
+}
+.aboutme::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.aboutme img{
+    border: 4px solid white ;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.aboutme .aboutme-description p{
+    text-align: center;
+}
+.aboutme .aboutme-description p a{
+    font-size: 1rem;
+}
+.aboutme .aboutme-description p a button{
+    border: none;
+    background-color: #052d2f;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 10px;
+}
+/* About me design ends here: */
+/* Professional-experience design starts here */
+.Professional-experience{
+    padding: 1% 4%;
+}
+
+.Professional-experience .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 700px;
+}
+.Professional-experience .card:hover{
+    box-shadow: 0px 4px 8px 5px black;
+}
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    margin-top: 30px;
+    padding: 8px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.card-title h2{
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.sub-name{
+    padding-right: 45px;
+}
+
+.sub-name li{
+    list-style: none;
+    margin: 35px 10px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+}
+.sub-name li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background-color: rgb(86,86,153,0.5);
+    border-radius: 1000px;
+}
+.sub-name li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0;
+    height: 18px;
+    background-color: rgb(86,86,153,1);
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+}
+.sub-name li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        content: '90%';
+        text-align: center;
+        width: 90%;
+    }
+}
+.sub-name li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        content: '88%';
+        text-align: center;
+        width: 88%;
+    }
+}
+.sub-name li.c::after{
+    animation-name: c;
+}
+@keyframes c{
+    to{
+        content: '99%';
+        text-align: center;
+        width: 99%;
+    }
+}
+
+.sub-name li.cp::after{
+    animation-name: cp;
+}
+@keyframes cp{
+    to{
+        content: '44%';
+        text-align: center;
+        width: 44%;
+    }
+}
+.sub-name li.java::after{
+    animation-name: java;
+}
+@keyframes java{
+    to{
+        content: '95%';
+        text-align: center;
+        width: 95%;
+    }
+}
+.sub-name li.python::after{
+    animation-name: python;
+}
+@keyframes python{
+    to{
+        content: '55%';
+        text-align: center;
+        width: 55%;
+    }
+}
+.sub-name li.swing::after{
+    animation-name: swing;
+}
+@keyframes swing{
+    to{
+        content: '90%';
+        text-align: center;
+        width: 90%;
+    }
+}
+.sub-name li.sql::after{
+    animation-name: swing;
+}
+@keyframes sql{
+    to{
+        content: '90%';
+        text-align: center;
+        width: 90%;
+    }
+}
+.Professional-experience::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* Professional-experience design ends here: */
+
+
+/* contact me starts here */
+.achievement{
+    padding-right: 50px;
+}
+.achievement li{
+    margin-bottom: 15px;
+}
+.contactme{
+    background-color: #298194;
+    padding: 1% 7%;
+    color: white;
+}
+.contact{
+
+    text-align: center;
+}
+.contact input,textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+    resize: none;
+}
+.contact button{
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #052d2f;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 12px;
+    width: 100px;
+}
+.contact-link{
+    text-align: center;
+}
+.button-div .btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px 20px;
+    height: 45px;
+    width: 50px;
+    background-color: white;
+    transition: height 0.19s, width .19s,font-size .19s;
+}
+.button-div .btn:hover{
+    height: 55px;
+    width: 60px;
+    font-size: 38px;
+    box-shadow: 0px 4px 8px 5px black;
+}
+.contactme::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* contact me ends here. */
+
+/* Footer starts from here. */
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.footer-links a{
+    display: block;
+    margin: 15px 0px;
+    font-size: 1rem;
+}
+
+.footer-links a:hover{
+    font-size: 1.5rem;
+}
+.footer-des p{
+    text-align: center;
+}
+footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* Footer ends here. */

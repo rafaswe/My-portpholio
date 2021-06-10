@@ -1,0 +1,111 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* nav-bar design starts from here. */
+.navbar{
+    margin: 0;
+    padding: 0px 10px;
+}
+.nav-logo{
+    text-align: left;
+}
+.nav-logo img{
+    width: 100px;
+    height: 75px;
+}
+.nav-heading{
+    text-align: center;
+    padding: 0px;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.nav-list a{
+    padding: 5p0x 15px;
+    margin: 20px 0px;
+    background-color: transparent;
+}
+/* nav-bar design ends here. */
+
+/* Profile design starts from here. */
+.profile .icon1{
+    right: 100px;
+    width: 120px;
+    transition: width 2s, transform 2s;
+}
+.profile .icon1:hover{
+    width: 150px;
+}
+
+.profile .icon2{
+    bottom: 20px;
+    left: 140px;
+    width: 100px;
+    transition: width 2s, transform 2s;
+}
+.profile .icon2:hover{
+    width: 120px;
+}
+
+.profile-description p{
+    color: gray;
+    margin: 0px auto;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+/* Profile ends here. */
+
+/* About me design starts here. */
+.aboutme img{
+    margin-top: 110px;
+    width: 300px;
+    height: 300px;
+}
+.aboutme .aboutme-description p{
+    text-align: left;
+}
+
+/* About me design ends here. */
+
+/* Professional-experience design starts here */
+.Professional-experience{
+    padding: 1% 5%;
+}
+/* Professional-experience design ends here: */
+
+/* contact me starts here */
+.contact button{
+    width: 200px;
+    padding: 10px 0px;
+}
+.contact-link{
+    position: relative;
+}
+.contact-link .button-div{
+    position: absolute;
+    margin-top: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* contact me ends here. */
+/* Footer starts from here. */
+.footer-links a{
+    display: inline;
+    margin: 15px 15px;
+    font-size: 1.5rem;
+}
+/* Footer me ends here. */
